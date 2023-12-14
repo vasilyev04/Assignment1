@@ -7,7 +7,6 @@ public class Phone implements Serializable {
     private String model;
     private double weight;
 
-
     Phone(String number, String model, double weight){
         this(number, model);
         this.weight = weight;
@@ -55,6 +54,6 @@ public class Phone implements Serializable {
     }
 
     public void sendMessage(String addresatNumber){
-        System.out.println(addresatNumber + " -> " + this.number);
+        System.out.println(this.number + " -> " + addresatNumber );
     }
 }
